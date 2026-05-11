@@ -1,6 +1,6 @@
 import pdfplumber
 
-with pdfplumber.open("sagar(Resume)HireQuest.pdf") as pdf:
+with pdfplumber.open("yourPdf.pdf") as pdf:
     text = ""
     for pdf in pdf.pages:
         text += pdf.extract_text() + "\n"
